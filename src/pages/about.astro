@@ -1,124 +1,132 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
-<Layout
-	title="About Me"
-	description="Rodney Rochester's professional profile and resume."
-	pubDate={new Date('October 26 2023')}
-	heroImage="/blog-placeholder-about.jpg"
->
-	<p>
-		Hello, my name is Rodney Rochester. I’ve been in construction since the 
-		age of 18 and I have been in the tower industry since 2011. I love the 
-		telecom industry and I strive every day to be better than yesterday.
-	</p>
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>About Me</h1>
+			<p>
+				Hello, my name is Rodney Rochester. I’ve been in construction since the
+				age of 18 and I have been in the tower industry since 2011. I love the
+				telecom industry and I strive every day to be better than yesterday.
+			</p>
 
-	<h2>Contact</h2>
-	<ul>
-		<li><strong>Phone:</strong> (770)398-2259</li>
-		<li><strong>Email:</strong> Tdtelecom2.0@outlook.com</li>
-	</ul>
+			<h2>Contact</h2>
+			<ul>
+				<li><strong>Phone:</strong> (770)398-2259</li>
+				<li><strong>Email:</strong> Tdtelecom2.0@outlook.com</li>
+			</ul>
 
-	<h2>Work Experience</h2>
+			<h2>Work Experience</h2>
 
-	<h3>Ingenious Services Group – Field Technician II (2011-2013)</h3>
-	<ul>
-		<li>Excavating, grading construction sites</li>
-		<li>Digging Trenches for Conduit Runs up to 1,200 ft long. Installing PVC and rigid conduit underground and above ground.</li>
-		<li>Installation of ground rings</li>
-		<li>Installations of AC panels, AC Meter, Disconnect Switches</li>
-		<li>Installation of concrete pads</li>
-		<li>Bending & tying rebar cages</li>
-		<li>Installation of RF cables from base stations to coax lines.</li>
-		<li>Testing with Anritsu</li>
-		<li>Install power cabinets to run AC & DC power.</li>
-		<li>Daily use of power tools and heavy machinery</li>
-	</ul>
+			<h3>Ingenious Services Group – Field Technician II (2011-2013)</h3>
+			<ul>
+				<li>Excavating, grading construction sites</li>
+				<li>Digging Trenches for Conduit Runs up to 1,200 ft long. Installing PVC and rigid conduit underground and above ground.</li>
+				<li>Installation of ground rings</li>
+				<li>Installations of AC panels, AC Meter, Disconnect Switches</li>
+				<li>Installation of concrete pads</li>
+				<li>Bending & tying rebar cages</li>
+				<li>Installation of RF cables from base stations to coax lines.</li>
+				<li>Testing with Anritsu</li>
+				<li>Install power cabinets to run AC & DC power.</li>
+				<li>Daily use of power tools and heavy machinery</li>
+			</ul>
 
-	<h3>Hurricane Wireless LLC – Foreman of a civil team (2013-2014)</h3>
-	<ul>
-		<li>Installations on Cell phone towers for ATT, T-Mobile, Sprint</li>
-		<li>2G, 3G installations</li>
-		<li>Concrete pads</li>
-		<li>H-frames</li>
-		<li>Electrical enclosures</li>
-		<li>Ac power panels 120/240v single phase / 3 phase system</li>
-		<li>RF installation, RF Testing, RF Troubleshooting</li>
-		<li>Cabinet Installs and decoms</li>
-		<li>Performed hot swaps and night cut overs</li>
-		<li>AC & DC Power upgrades</li>
-		<li>The rectifier’s shelf installation converts 240v AC power to +24 or –48</li>
-		<li>PIM testing</li>
-		<li>Installation of ground rings and any other grounding per the
-		construction drawings</li>
-	</ul>
+			<h3>Hurricane Wireless LLC – Foreman of a civil team (2013-2014)</h3>
+			<ul>
+				<li>Installations on Cell phone towers for ATT, T-Mobile, Sprint</li>
+				<li>2G, 3G installations</li>
+				<li>Concrete pads</li>
+				<li>H-frames</li>
+				<li>Electrical enclosures</li>
+				<li>Ac power panels 120/240v single phase / 3 phase system</li>
+				<li>RF installation, RF Testing, RF Troubleshooting</li>
+				<li>Cabinet Installs and decoms</li>
+				<li>Performed hot swaps and night cut overs</li>
+				<li>AC & DC Power upgrades</li>
+				<li>The rectifier’s shelf installation converts 240v AC power to +24 or –48</li>
+				<li>PIM testing</li>
+				<li>Installation of ground rings and any other grounding per the
+				construction drawings</li>
+			</ul>
 
-	<h3>A6 Telecom - Foreman of 4-man crew (2014-2016)</h3>
-	<ul>
-		<li>Installations on the civil side cabinets concrete pads, pads with footers.</li>
-		<li>H frames, AC & DC power to equipment. Battery cabinet installations or decommission. Exothermic welding.</li>
-		<li>Installations on the Tower for 4G LTE. ATT, T-Mobile, Sprint. Replacing Antennas, Radios, Hardware, Fiber and Power trunks.</li>
-		<li>Replacing Steel, repairing and maintaining equipment on the ground as well as on the tower.</li>
-		<li>Performed tower modifications/beef ups and painted the structure</li>
-		<li>Fabrication and welding Experience</li>
-		<li>Generator installs and automatic transfer switches.</li>
-		<li>Generator maintenance</li>
-		<li>Beacon Light Installs</li>
-		<li>Poured and finished concrete pads of all sizes</li>
-	</ul>
+			<h3>A6 Telecom - Foreman of 4-man crew (2014-2016)</h3>
+			<ul>
+				<li>Installations on the civil side cabinets concrete pads, pads with footers.</li>
+				<li>H frames, AC & DC power to equipment. Battery cabinet installations or decommission. Exothermic welding.</li>
+				<li>Installations on the Tower for 4G LTE. ATT, T-Mobile, Sprint. Replacing Antennas, Radios, Hardware, Fiber and Power trunks.</li>
+				<li>Replacing Steel, repairing and maintaining equipment on the ground as well as on the tower.</li>
+				<li>Performed tower modifications/beef ups and painted the structure</li>
+				<li>Fabrication and welding Experience</li>
+				<li>Generator installs and automatic transfer switches.</li>
+				<li>Generator maintenance</li>
+				<li>Beacon Light Installs</li>
+				<li>Poured and finished concrete pads of all sizes</li>
+			</ul>
 
-	<h3>ZZ towers - Foreman (2017-2019)</h3>
-	<ul>
-		<li>T- Mobile Co-locates</li>
-		<li>Trenching for conduit runs and ground rings.</li>
-		<li>Ac panel replacement or installs.</li>
-		<li>Installation of Radio cabinets & BBU</li>
-		<li>Installed Generators</li>
-		<li>Install ATS, for generator</li>
-		<li>Install all associated conduit</li>
-		<li>Concrete pads</li>
-		<li>Installation of rigid pipe</li>
-		<li>Schedule inspections with the county for building & electrical.</li>
-	</ul>
+			<h3>ZZ towers - Foreman (2017-2019)</h3>
+			<ul>
+				<li>T- Mobile Co-locates</li>
+				<li>Trenching for conduit runs and ground rings.</li>
+				<li>Ac panel replacement or installs.</li>
+				<li>Installation of Radio cabinets & BBU</li>
+				<li>Installed Generators</li>
+				<li>Install ATS, for generator</li>
+				<li>Install all associated conduit</li>
+				<li>Concrete pads</li>
+				<li>Installation of rigid pipe</li>
+				<li>Schedule inspections with the county for building & electrical.</li>
+			</ul>
 
-	<h3>Epic towers - Foreman (2019-2021)</h3>
-	<ul>
-		<li>I was in charge of all power upgrades for T- Mobile ranging from simple 
-		breaker & wire upgrades from 60/100 amp breakers to 150 amp 
-		breakers with 3/0 wire to Ac panel swaps during the maintenance 
-		widow 12 am- 6am also changing the old appleton gen plugs to the 
-		new Cam lock style plugs.</li>
-		<li>Full installation of 6160 & B-160 cabinets</li>
-		<li>Concrete pads, H-frames, Ice bridge installations, ETC.</li>
-	</ul>
+			<h3>Epic towers - Foreman (2019-2021)</h3>
+			<ul>
+				<li>I was in charge of all power upgrades for T- Mobile ranging from simple
+				breaker & wire upgrades from 60/100 amp breakers to 150 amp
+				breakers with 3/0 wire to Ac panel swaps during the maintenance
+				widow 12 am- 6am also changing the old appleton gen plugs to the
+				new Cam lock style plugs.</li>
+				<li>Full installation of 6160 & B-160 cabinets</li>
+				<li>Concrete pads, H-frames, Ice bridge installations, ETC.</li>
+			</ul>
 
-	<h3>TD telecom - Owner/Operator (2021-2023)</h3>
-	<p>
-		We were responsible for building Verizon sites for Direct tower also did a 
-		lot of T- Mobile NSB’s , full Sprint decoms as well as Dish Network NSB’s. 
-		At any given time i had two tower crews and three civil crews that I 
-		ran.
-	</p>
+			<h3>TD telecom - Owner/Operator (2021-2023)</h3>
+			<p>
+				We were responsible for building Verizon sites for Direct tower also did a
+				lot of T- Mobile NSB’s , full Sprint decoms as well as Dish Network NSB’s.
+				At any given time i had two tower crews and three civil crews that I
+				ran.
+			</p>
 
-	<h2>Skills & Certifications</h2>
-	<ul>
-		<li>Osha 30 certified</li>
-		<li>Heat stress certified</li>
-		<li>Rf awareness certified</li>
-		<li>First Aid CPR Certified</li>
-		<li>Bloodborne Pathogen Certified</li>
-		<li>Lockout & Tagout certified</li>
-		<li>I’m willing to obtain any other certifcations required.</li>
-		<li>Very Organized, Safety is Priority</li>
-		<li>Communicative and not afraid to ask questions when needed.</li>
-		<li>Mechanicically inclined</li>
-		<li>Respectful & proffesional</li>
-		<li>Leader & a team player</li>
-		<li>Realiable</li>
-		<li>I have plenty of my own tools for most builds.</li>
-		<li>Reliable transportation</li>
-		<li>I’m honest and take pride in my work.</li>
-	</ul>
-
-</Layout>
+			<h2>Skills & Certifications</h2>
+			<ul>
+				<li>Osha 30 certified</li>
+				<li>Heat stress certified</li>
+				<li>Rf awareness certified</li>
+				<li>First Aid CPR Certified</li>
+				<li>Bloodborne Pathogen Certified</li>
+				<li>Lockout & Tagout certified</li>
+				<li>I’m willing to obtain any other certifcations required.</li>
+				<li>Very Organized, Safety is Priority</li>
+				<li>Communicative and not afraid to ask questions when needed.</li>
+				<li>Mechanicically inclined</li>
+				<li>Respectful & proffesional</li>
+				<li>Leader & a team player</li>
+				<li>Realiable</li>
+				<li>I have plenty of my own tools for most builds.</li>
+				<li>Reliable transportation</li>
+				<li>I’m honest and take pride in my work.</li>
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>
